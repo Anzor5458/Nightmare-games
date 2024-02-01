@@ -1,0 +1,71 @@
+firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'nightmare mod,true,2)
+wait(1)
+firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Credits to Anzor for Making nightmare mod Doors',true,1)
+-- Custom Door Sounds
+loadstring(game:HttpGet("https://pastebin.com/raw/iAhTGdBh"))()
+loadstring(game:HttpGet("https://pastebin.com/raw/6brG9uma"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/iCherryKardes/Doors/main/Floor%202%20Mod"))()
+
+game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+
+-- Abyss
+coroutine.wrap(function()
+    while true do
+        wait(math.random(55,250))
+game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+wait(0.5)
+if workspace:FindFirstChild("RushMoving") == nil and game:GetService("ReplicatedStorage").GameData.LatestRoom.Value ~= 50 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Anzor5458/No/main/Abyss.txt"))()
+end
+    end
+end)()
+
+-- Matcher Mimic
+coroutine.wrap(function()
+    while true do
+        wait(math.random(105,250))
+game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+workspace.Mimic.MatchMimic1:Destroy()
+workspace.Mimic.roast:Destroy()
+wait(0.35)
+if workspace:FindFirstChild("Matcher") == nil and workspace:FindFirstChild("RushMoving") == nil and workspace:FindFirstChild("Bound") == nil and workspace:FindFirstChild("AmbushMoving") == nil and game:GetService("ReplicatedStorage").GameData.LatestRoom.Value ~= 50 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/Entities/main/MatchMimic.txt"))()
+end
+    end
+end)()
+
+-- Glare
+coroutine.wrap(function()
+    while true do
+        wait(math.random(155,650))
+game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+workspace.Mimic.BoundMimic1:Destroy()
+wait(1.55)
+if workspace:FindFirstChild("Matcher") == nil and workspace:FindFirstChild("RushMoving") == nil and workspace:FindFirstChild("Bound") == nil and workspace:FindFirstChild("AmbushMoving") == nil and game:GetService("ReplicatedStorage").GameData.LatestRoom.Value ~= 50 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Anzor5458/No/main/Glare.txt"))()
+end
+    end
+end)()
+
+-- Blcok
+coroutine.wrap(function()
+    while true do
+        wait(math.random(30,150))
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0.3)
+if workspace:FindFirstChild("RushMoving") == nil and game:GetService("ReplicatedStorage").GameData.LatestRoom.Value ~= 50 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Anzor5458/No/main/block.txt"))()
+end
+    end
+end)()
+
+-- Crucifix
+coroutine.wrap(function()
+    while true do
+        wait(math.random(160,860))
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        if workspace:FindFirstChild("SeekMoving") == nil and game:GetService("ReplicatedStorage").GameData.LatestRoom.Value ~= 50 then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/DeividComSono/Scripts/main/Crucifix.lua'))()
+        end
+    end
+end)()
